@@ -55,12 +55,15 @@ public class Program {
 			}
 		}
 		
-		int resultado = lessontask.duration() + lessonvideo.duration();
 		
-		System.out.println("Resultado: " + resultado);
+		int resultado = 0;
 		
+		for (Lesson lesson : list) {
+            resultado += lesson.duration();
+        }
+		
+		System.out.println("DURAÇÃO TOTAL DO CURSO = " + resultado + " segundos");
 		
 		sc.close();
 	}
-
 }

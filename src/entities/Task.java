@@ -33,10 +33,7 @@ public class Task extends Lesson {
 
 	@Override
 	public int duration() {
-		int soma = 0;
-		for(Lesson lesson : list) {
-			soma += ((Task) lesson).getQuestionCount();
-		}
-		return soma * 60;
+		return questionCount * 300;
 	}
+	
 }

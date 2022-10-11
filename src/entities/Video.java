@@ -33,10 +33,6 @@ public class Video extends Lesson {
 
 	@Override
 	public int duration() {
-		int sum = 0;
-		for(Lesson lesson : list) {
-			sum += ((Video) lesson).getSeconds();
-		}
-		return sum;
+		return seconds;
 	}
 }
